@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "nome": "Cinetag",
+    "image": "../../images/screenshot/cinetag-khaki.vercel.app_.png",
+    "descricao": [
+      "This project is a video player, where you can chose a video, that is coming from an API inside a fake server, from the main page to watch and with a feature to add videos to a favorite list. My goal with the project was to learn how to better use React Router to navigate between different pages and to get a better understanding on the useEffect hook with using it with an API to get all the videos to the main page"
+    ],
+    "tecnologias": ["React", " Javascript", "Fetch API", "React Router", "HTML", "CSS"],
+    "github": "https://github.com/BpCampos/cinetag",
+    "website": "https://cinetag-khaki.vercel.app/"
+  },
+  {
+    "id": 2,
+    "nome": "Profile",
+    "image": "../../images/screenshot/profile-gilt-nu.vercel.app_.png",
+    "descricao": [
+      "This project recreate a blog website wit informations about me and different posts to navigate within and was developed with the main goal of learn how to use React Router and understand how to manage the application paths"
+    ],
+    "tecnologias": ["React", "Javascript", "HTML", "CSS", "Vite", "React Router"],
+    "github": "https://github.com/BpCampos/profile",
+    "website": "https://profile-gilt-nu.vercel.app/"
+  },
+  {
+    "id": 3,
+    "nome": "Bitspace",
+    "image": "../../images/screenshot/localhost_4000_.png",
+    "descricao": [
+      "This project is a replica of an Ecommerce website as the final project of the coding bootcamp from Digital House that was created using JavaScript,Node, Express, EJS, CSS, MySQL for the database and Sequelize as the ORM."
+    ],
+    "tecnologias": ["Javascript", "EJS", "CSS", "Node", "Express", "MySQL", "Sequelize"],
+    "github": "https://github.com/BpCampos/Bitspace",
+    "website": ""
+  },
+  {
+    "id": 4,
+    "nome": "NLW Spacetime",
+    "image": "../../images/screenshot/nlwspacetime.png",
+    "descricao": [
+      "Webpage made to acces videos fetched from an API e also an area to upload your own video .This project was made with the goal of learn how to fetch information from an API and also send information through the POST method"
+    ],
+    "tecnologias": ["Typescript", "React", "Node", "Fastify", "HTML", "CSS", "NextJs", "tailwind", "Prisma", "SQLite"],
+    "github": "https://github.com/BpCampos/NLW-Spacetime",
+    "website": ""
+  }
+]
