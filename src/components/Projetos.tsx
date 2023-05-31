@@ -2,7 +2,6 @@
 import React, { ReactElement, useState } from 'react'
 import cards from '../json/cards.json'
 import Projeto from './Projeto'
-import { info } from 'autoprefixer'
 import Card from './Card'
 
 export default function Projetos(): ReactElement {
@@ -22,7 +21,7 @@ export default function Projetos(): ReactElement {
     setProjeto(projetoAtivo)
   }
 
-  if (show === true) {
+  if (show) {
     return (
       <div>
         {projeto.map((info) => {
@@ -34,7 +33,7 @@ export default function Projetos(): ReactElement {
               <div
                 className={
                   selectedCard[0].id === info.id
-                    ? 'w-[300px] mt-[100px] shadow-2xl shadow-black border rounded-xl scale-110 text-green-400 duration-200 hover:cursor-pointer bg-slate-800'
+                    ? 'w-[300px] mt-[100px] shadow-2xl shadow-black border rounded-xl scale-110 text-green-500 duration-200 hover:cursor-pointer bg-slate-800'
                     : 'w-[300px] mt-[100px] shadow-xl shadow-black border rounded-xl hover:scale-105 duration-200 hover:cursor-pointer bg-slate-800 text-white'
                 }
                 key={info.id}
