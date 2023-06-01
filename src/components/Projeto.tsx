@@ -22,13 +22,15 @@ export default function Projeto({ projeto }: any) {
             )
           })}
         </ul>
-        <div className="w-80 mt-5">
+        <div className="w-80 mt-5 flex gap-9">
           <a href={projeto.github} target="blank">
             <img className="w-12" src="../../images/github.png" alt="github" />
           </a>
-          <a href={projeto.website} target="blank">
-            <img src="" alt="" />
-          </a>
+          {projeto.website !== '' && (
+            <a href={projeto.website} target="blank">
+              <img className="w-12" src="../../images/link-externo.png" alt="Link website" />
+            </a>
+          )}
         </div>
       </section>
     </div>

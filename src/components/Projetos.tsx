@@ -39,7 +39,12 @@ export default function Projetos(): ReactElement {
                 key={info.id}
                 onClick={() => mostraProjeto(info.id)}>
                 <h1 className="font-bold text-2xl text-center py-3">{info.nome}</h1>
-                <img className="rounded-xl rounded-ss-none rounded-se-none w-full" src={info.image} alt={info.nome} />
+                <img
+                  className="rounded-xl rounded-ss-none rounded-se-none w-full"
+                  src={info.image}
+                  alt={info.nome}
+                  draggable={false}
+                />
               </div>
             )
           })}
