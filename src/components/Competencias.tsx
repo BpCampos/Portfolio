@@ -67,7 +67,7 @@ export default function Competencias() {
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-xl shadow-slate-800">
+          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
           <p className="text-center text-2xl font-bold mb-5">Front End</p>
           <ul className="[&>*]:w-20 flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap">
             <li>
@@ -104,7 +104,7 @@ export default function Competencias() {
           onMouseMove={() => mouseOver2()}
           onMouseLeave={() => mouseLeave()}
           ref={competencia2}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-xl shadow-slate-800">
+          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
           <p className="text-center text-2xl font-bold mb-5">Back End</p>
           <ul className="[&>*]:w-20 flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap">
             <li>
