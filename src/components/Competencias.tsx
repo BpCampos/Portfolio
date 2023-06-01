@@ -32,6 +32,7 @@ export default function Competencias() {
       20
 
     competencia1.current.style.transform = `rotateX(${rotateYC1}deg) rotateY(${rotateXC1}deg)`
+    competencia1.current.style.transition = `0ms`
   }
 
   function mouseOver2() {
@@ -48,13 +49,14 @@ export default function Competencias() {
       20
 
     competencia2.current.style.transform = `rotateX(${rotateYC2}deg) rotateY(${rotateXC2}deg)`
+    competencia2.current.style.transition = `0ms`
   }
 
   function mouseLeave() {
-    competencia1.current.style.transform = `rotateY(0deg)`
-    competencia1.current.style.transform = `rotateX(0deg)`
-    competencia2.current.style.transform = `rotateY(0deg)`
-    competencia2.current.style.transform = `rotateX(0deg)`
+    competencia1.current.style.transform = `none`
+    competencia1.current.style.transition = `300ms`
+    competencia2.current.style.transform = `none`
+    competencia2.current.style.transition = `300ms`
   }
 
   return (
@@ -65,7 +67,7 @@ export default function Competencias() {
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-xl shadow-slate-800 skew-y-1">
+          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-xl shadow-slate-800">
           <p className="text-center text-2xl font-bold mb-5">Front End</p>
           <ul className="[&>*]:w-20 flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap">
             <li>
