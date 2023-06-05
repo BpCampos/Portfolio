@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
+import Competencia from './Competencia'
 
 export default function Competencias() {
   const competencia1: React.LegacyRef<HTMLElement> | any = useRef()
@@ -61,43 +62,43 @@ export default function Competencias() {
 
   return (
     <div>
-      <h1 className="text-center text-5xl font-bold">Tecnologias</h1>
-      <div className="flex m-auto justify-center gap-10 p-10">
+      <h1 className="text-center text-5xl font-bold max-sm:text-3xl">Tecnologias</h1>
+      <div className="flex m-auto justify-center gap-10 p-10 ">
         <section
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
           className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
-          <p className="text-center text-2xl font-bold mb-5">Front End</p>
-          <ul className="[&>*]:w-20 flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap">
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-              Javascript
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-              Typescript
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-              HTML
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-              CSS
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              React
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-              Bootstrap
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-              Tailwind
-            </li>
+          <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Front End</p>
+          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5">
+            <Competencia
+              nome={'Javascript'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg'}
+            />
+            <Competencia
+              nome={'Typescript'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'}
+            />
+            <Competencia
+              nome={'HTML'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'}
+            />
+            <Competencia
+              nome={'CSS'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'}
+            />
+            <Competencia
+              nome={'React'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'}
+            />
+            <Competencia
+              nome={'Bootstrap'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'}
+            />
+            <Competencia
+              nome={'Tailwind'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'}
+            />
           </ul>
         </section>
         <section
@@ -105,32 +106,23 @@ export default function Competencias() {
           onMouseLeave={() => mouseLeave()}
           ref={competencia2}
           className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
-          <p className="text-center text-2xl font-bold mb-5">Back End</p>
-          <ul className="[&>*]:w-20 flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap">
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-              Node
-            </li>
-            <li>
-              <img src="https://img.icons8.com/office/60/express-js.png" alt="express-js" className="w-20 h-20" />
-              Express
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-              MySQL
-            </li>
-            <li>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
-              Sequelize
-            </li>
-            <li>
-              <img src="../../images/postman-icon.png" />
-              Postman
-            </li>
-            <li>
-              <img src="../../images/prisma.png" className="w-20 h-20" />
-              Prisma
-            </li>
+          <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Back End</p>
+          <ul className=" flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5">
+            <Competencia
+              nome={'Node'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}
+            />
+            <Competencia nome={'Express'} src={'https://img.icons8.com/office/60/express-js.png'} />
+            <Competencia
+              nome={'MySQL'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'}
+            />
+            <Competencia
+              nome={'Sequelize'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg'}
+            />
+            <Competencia nome={'Postman'} src={'../../images/postman-icon.png'} />
+            <Competencia nome={'Prisma'} src={'../../images/prisma.png'} />
           </ul>
         </section>
       </div>

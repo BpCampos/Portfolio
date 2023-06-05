@@ -1,4 +1,4 @@
-import Competencias from '@/components/Competencias'
+import Competencias from '@/components/competencias/Competencias'
 import Projetos from '@/components/Projetos'
 import SobreMim from '@/components/SobreMim'
 
@@ -12,7 +12,7 @@ export default function Home() {
         <Competencias />
       </section>
       <section>
-        <h1 className="text-center text-5xl font-bold mb-11">Projetos</h1>
+        <h1 className="text-center text-5xl font-bold mb-11 max-sm:text-3xl">Projetos</h1>
         <Projetos />
       </section>
     </main>
