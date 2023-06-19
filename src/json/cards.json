@@ -4,7 +4,7 @@
     "nome": "Cinetag",
     "image": "../../images/screenshot/cinetag-khaki.vercel.app_.png",
     "descricao": [
-      "This project is a video player, where you can chose a video, that is coming from an API inside a fake server, from the main page to watch and with a feature to add videos to a favorite list. My goal with the project was to learn how to better use React Router to navigate between different pages and to get a better understanding on the useEffect hook with using it with an API to get all the videos to the main page"
+      "Este projeto é um reprodutor de vídeo, onde você pode escolher um vídeo que vem de uma API dentro de um servidor de teste, na página principal da aplicação para assistir, e com uma função para adicionar vídeos a uma lista de favoritos. Meu objetivo com o projeto era aprender a usar melhor o React Router para navegar entre diferentes páginas e obter uma compreensão mais clara do hook useEffect ao utilizá-lo com uma API para obter todos os vídeos para a página principal."
     ],
     "tecnologias": ["React", " Javascript", "Fetch API", "React Router", "HTML", "CSS"],
     "github": "https://github.com/BpCampos/cinetag",
@@ -15,7 +15,7 @@
     "nome": "Profile",
     "image": "../../images/screenshot/profile-gilt-nu.vercel.app_.png",
     "descricao": [
-      "This project recreate a blog website wit informations about me and different posts to navigate within and was developed with the main goal of learn how to use React Router and understand how to manage the application paths"
+      "Este projeto recria um blog com informações sobre mim e diferentes postagens em páginas separadas para navegar. Ele foi desenvolvido com o objetivo principal de aprender a usar o React Router e entender como gerenciar os caminhos da aplicação."
     ],
     "tecnologias": ["React", "Javascript", "HTML", "CSS", "Vite", "React Router"],
     "github": "https://github.com/BpCampos/profile",
@@ -26,7 +26,7 @@
     "nome": "Bitspace",
     "image": "../../images/screenshot/localhost_4000_.png",
     "descricao": [
-      "This project is a replica of an Ecommerce website as the final project of the coding bootcamp from Digital House that was created using JavaScript,Node, Express, EJS, CSS, MySQL for the database and Sequelize as the ORM."
+      "Criei um e-commerce de produtos de informática como projeto final do curso Full Stack, utilizando EJS como view engine, CSS, Javascript, Node, Express, MySQL , Sequelize e o padrão MVC de arquitetura."
     ],
     "tecnologias": ["Javascript", "EJS", "CSS", "Node", "Express", "MySQL", "Sequelize"],
     "github": "https://github.com/BpCampos/Bitspace",
@@ -37,7 +37,7 @@
     "nome": "NLW Spacetime",
     "image": "../../images/screenshot/nlwspacetime.png",
     "descricao": [
-      "Webpage made to acces videos fetched from an API e also an area to upload your own video .This project was made with the goal of learn how to fetch information from an API and also send information through the POST method"
+      "Projeto criado na semana Next Level da RocketSeat com objetivo de aprender mais afundo sobre tecnologias web, front end e back end. Consiste em uma máquina do tempo onde você pode armazenar uma memória, seja em vídeo ou imagem, utilizando o prisma como ORM e o SQLite para o banco de dados, linkar sua conta do github com o site através do OAuth e vizualizar as suas memórias cadastradas na página inicial através do React e do framework NextJs"
     ],
     "tecnologias": ["Typescript", "React", "Node", "Fastify", "HTML", "CSS", "NextJs", "tailwind", "Prisma", "SQLite"],
     "github": "https://github.com/BpCampos/NLW-Spacetime",
