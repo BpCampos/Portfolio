@@ -63,14 +63,14 @@ export default function Competencias() {
   return (
     <div>
       <h1 className="text-center text-5xl font-bold max-sm:text-3xl">Tecnologias</h1>
-      <div className="flex m-auto justify-center gap-10 p-10 ">
+      <div className="flex m-auto justify-center gap-10 p-10 max-sm:flex-col ">
         <section
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
+          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Front End</p>
-          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5">
+          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5 ">
             <Competencia
               nome={'Javascript'}
               src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg'}
@@ -105,7 +105,7 @@ export default function Competencias() {
           onMouseMove={() => mouseOver2()}
           onMouseLeave={() => mouseLeave()}
           ref={competencia2}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800">
+          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Back End</p>
           <ul className=" flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5">
             <Competencia
