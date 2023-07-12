@@ -70,7 +70,7 @@ export default function Competencias() {
           onMouseLeave={() => mouseLeave()}
           className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Front End</p>
-          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5 ">
+          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
               nome={'Javascript'}
               src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg'}
@@ -107,7 +107,7 @@ export default function Competencias() {
           ref={competencia2}
           className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Back End</p>
-          <ul className=" flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:px-5">
+          <ul className=" flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
               nome={'Node'}
               src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}
