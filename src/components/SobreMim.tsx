@@ -3,12 +3,12 @@ import React from 'react'
 export default function SobreMim() {
   return (
     <div>
-      <p className="text-3xl font-bold ml-2 max-sm:text-lg max-sm:ml-0.5">Ola, sou o Bruno Campos</p>
+      <p className="text-4xl font-bold ml-2 max-sm:text-lg max-sm:ml-0.5">Ola, sou o Bruno Campos</p>
       <p className="text-9xl font-bold max-sm:text-5xl">Desenvolvedor</p>
       <div className="flex gap-4">
         <p className="text-9xl font-bold bg-slate-700 text-white px-1 pr-2 max-sm:text-5xl">Full Stack</p>
-        <div className="text-base max-sm:text-sm">
-          <p className="font-bold max-sm:mb-4">
+        <div className="text-base max-sm:text-sm -mt-1">
+          <p className="font-bold max-sm:mb-4 mb-2">
             Formado em Economia pela <span className="text-blue-800 font-extrabold">PUC-SP</span>
           </p>
           <p className="font-bold">Apaixonado por tecnologia</p>
