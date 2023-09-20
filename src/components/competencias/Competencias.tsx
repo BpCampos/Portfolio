@@ -70,7 +70,7 @@ export default function Competencias() {
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
-          className="border-2 border-black rounded-lg py-4 w-[500px]  max-sm:w-full bg-white shadow-xl shadow-slate-600">
+          className="border-2 border-black rounded-lg py-4 w-[500px]  max-sm:w-full bg-slate-800 text-white shadow-xl shadow-slate-600">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">FRONT END</p>
           <ul className="grid grid-cols-2 gap-y-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
@@ -108,7 +108,7 @@ export default function Competencias() {
           onMouseMove={() => mouseOver2()}
           onMouseLeave={() => mouseLeave()}
           ref={competencia2}
-          className="border-2 border-black rounded-lg py-4 w-[500px] bg-white max-sm:w-full shadow-xl shadow-slate-600">
+          className="border-2 border-black rounded-lg py-4 w-[500px] max-sm:w-full shadow-xl shadow-slate-600 bg-slate-800 text-white">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">BACK END</p>
           <ul className=" grid grid-cols-2 gap-y-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
