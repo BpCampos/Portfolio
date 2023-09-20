@@ -30,9 +30,10 @@ export default function Competencias() {
       ((cords.x -
         (competencia1.current.getBoundingClientRect().x + competencia1.current.getBoundingClientRect().width / 2)) /
         (competencia1.current.getBoundingClientRect().width / 2)) *
-      20
+      20 *
+      -1
 
-    competencia1.current.style.transform = `rotateX(${rotateYC1}deg) rotateY(${rotateXC1}deg)`
+    competencia1.current.style.transform = `perspective(1000px) rotateX(${rotateYC1}deg) rotateY(${rotateXC1}deg) scale3d(1.05, 1.05, 1.05)`
     competencia1.current.style.transition = `0ms`
   }
 
@@ -47,9 +48,10 @@ export default function Competencias() {
       ((cords.x -
         (competencia2.current.getBoundingClientRect().x + competencia2.current.getBoundingClientRect().width / 2)) /
         (competencia2.current.getBoundingClientRect().width / 2)) *
-      20
+      20 *
+      -1
 
-    competencia2.current.style.transform = `rotateX(${rotateYC2}deg) rotateY(${rotateXC2}deg)`
+    competencia2.current.style.transform = `perspective(1000px) rotateX(${rotateYC2}deg) rotateY(${rotateXC2}deg) scale3d(1.05, 1.05, 1.05)`
     competencia2.current.style.transition = `0ms`
   }
 
@@ -63,14 +65,14 @@ export default function Competencias() {
   return (
     <div>
       <h1 className="text-center text-5xl font-bold max-sm:text-3xl">Tecnologias</h1>
-      <div className="flex m-auto justify-center gap-10 p-10 max-sm:flex-col ">
+      <div className="flex m-auto justify-center gap-48 p-10 max-sm:flex-col ">
         <section
           ref={competencia1}
           onMouseMove={() => mouseOver1()}
           onMouseLeave={() => mouseLeave()}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
+          className="border-2 border-black rounded-lg py-4 w-[500px]  max-sm:w-full bg-white shadow-xl shadow-slate-600">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Front End</p>
-          <ul className="flex justify-between gap-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
+          <ul className="grid grid-cols-2 gap-y-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
               nome={'Javascript'}
               src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg'}
@@ -101,13 +103,14 @@ export default function Competencias() {
             />
           </ul>
         </section>
+
         <section
           onMouseMove={() => mouseOver2()}
           onMouseLeave={() => mouseLeave()}
           ref={competencia2}
-          className="border-2 border-black rounded-lg py-4 w-1/2 shadow-sides shadow-slate-800 max-sm:w-full">
+          className="border-2 border-black rounded-lg py-4 w-[500px] bg-white max-sm:w-full shadow-xl shadow-slate-600">
           <p className="text-center text-2xl font-bold mb-5 max-sm:text-xl">Back End</p>
-          <ul className=" flex gap-5 justify-between [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
+          <ul className=" grid grid-cols-2 gap-y-5 [&>*]:text-center px-10 [&>*]:font-bold flex-wrap max-sm:grid max-sm:grid-cols-3 max-sm:gap-x-3 max-sm:text-base max-sm:px-0">
             <Competencia
               nome={'Node'}
               src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'}
