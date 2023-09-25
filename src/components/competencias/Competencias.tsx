@@ -64,7 +64,7 @@ export default function Competencias() {
 
   return (
     <div>
-      <h1 className="text-center text-5xl font-bold max-sm:text-3xl mb-4">Tecnologias</h1>
+      <h1 className="text-center text-5xl font-bold max-sm:text-3xl mb-4 -mt-24 max-sm:-mt-0">Tecnologias</h1>
       <div className="flex m-auto justify-center gap-48 p-10 max-sm:flex-col ">
         <section
           ref={competencia1}

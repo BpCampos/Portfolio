@@ -4,8 +4,8 @@ import SobreMim from '@/components/SobreMim'
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-between bg-neutral-100 relative gap-6">
-      <section className="grid place-content-center w-1/2 m-auto my-[100px]">
+    <main className="flex flex-col justify-between bg-neutral-100 relative">
+      <section className="grid place-content-center max-sm:gap-6 m-auto my-[100px]">
         <SobreMim />
       </section>
       <section className="mb-[100px]">
