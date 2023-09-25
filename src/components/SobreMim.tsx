@@ -9,7 +9,7 @@ export default function SobreMim() {
         <p className="text-[140px] font-bold bg-slate-700 text-white px-8 max-sm:text-5xl max-sm:w-fit max-sm:px-3 max-sm:pb-1 h-fit">
           Full Stack
         </p>
-        <div className="grid gap-8 grid-cols-2 justify-items-center items-center w-1/4 ">
+        <div className="grid gap-8 grid-cols-2 justify-items-center items-center w-1/4 max-sm:flex max-sm:w-full max-sm:mt-2 ">
           <a href="https://www.linkedin.com/in/bruno-campos98/" target="blank" className="w-16 max-sm:w-8">
             <img className="hover:cursor-pointer hover:scale-110 duration-150" src="../../images/linkedin.png" alt="" />
           </a>
