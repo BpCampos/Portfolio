@@ -5,7 +5,11 @@ export default function Projeto({ projeto }: any) {
         <h1 className="text-center font-bold text-3xl max-sm:bg-slate-800 max-sm:text-white max-sm:rounded-t-lg bg-slate-800 w-5/6 mx-auto rounded-lg rounded-ee-none rounded-es-none py-1 text-white">
           {projeto.nome}
         </h1>
-        <img src={projeto.image} alt={projeto.nome} className="w-5/6 m-auto rounded-lg max-sm:w-full rounded-ss-none" />
+        <img
+          src={projeto.image}
+          alt={projeto.nome}
+          className="w-5/6 m-auto rounded-lg max-sm:w-full rounded-se-none rounded-ss-none"
+        />
       </section>
       <section className="flex-1 mt-8 max-sm:w-full">
         <p className="text-xl font-bold w-3/4 bg-slate-800 text-white p-5 rounded-md max-sm:text-lg max-sm:w-[90%] max-sm:mx-auto">

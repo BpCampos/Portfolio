@@ -1,14 +1,26 @@
 [
   {
     "id": 1,
-    "nome": "Cinetag",
-    "image": "../../images/screenshot/cinetag-khaki.vercel.app_.png",
+    "nome": "chat-app",
+    "image": "../../images/screenshot/chatapp.png",
     "descricao": [
-      "Este projeto é um reprodutor de vídeo, onde você pode escolher um vídeo que vem de uma API dentro de um servidor de teste, na página principal da aplicação para assistir, e com uma função para adicionar vídeos a uma lista de favoritos. Meu objetivo com o projeto era aprender a usar melhor o React Router para navegar entre diferentes páginas e obter uma compreensão mais clara do hook useEffect ao utilizá-lo com uma API para obter todos os vídeos para a página principal."
+      "Este é um projeto pessoal que tem como objetivo criar um aplicativo de chat com comunicação em tempo real via websockets, utilizando o MongoDB como banco de dados para armazenar mensagens, usuários e arquivos, JWT para autenticação, React e Next.js para o frontend, Node e Express para o backend, e Tailwind para o CSS."
     ],
-    "tecnologias": ["React", " Javascript", "Fetch API", "React Router", "HTML", "CSS"],
-    "github": "https://github.com/BpCampos/cinetag",
-    "website": "https://cinetag-khaki.vercel.app/"
+    "tecnologias": [
+      "React",
+      "Typescript",
+      "Axios",
+      "NextJs",
+      "HTML",
+      "tailwind",
+      "Websockets",
+      "Node",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Mongoose"
+    ],
+    "github": "https://github.com/BpCampos/chat-app"
   },
   {
     "id": 2,
