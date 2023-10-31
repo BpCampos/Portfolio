@@ -31,7 +31,7 @@ export default function Projeto({ projeto }: any) {
           <a href={projeto.github} target="blank">
             <img className="w-12 max-sm:w-10" src="../../images/github.png" alt="github" />
           </a>
-          {projeto.website !== '' && (
+          {projeto.website && (
             <a href={projeto.website} target="blank">
               <img className="w-12 max-sm:w-10" src="../../images/link-externo.png" alt="Link website" />
             </a>
