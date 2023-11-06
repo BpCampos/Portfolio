@@ -126,6 +126,10 @@ export default function Competencias() {
             />
             <Competencia nome={'Postman'} src={'../../images/postman-icon.png'} />
             <Competencia nome={'Prisma'} src={'../../images/prisma.png'} />
+            <Competencia
+              nome={'MongoDB'}
+              src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'}
+            />
           </ul>
         </section>
       </div>
