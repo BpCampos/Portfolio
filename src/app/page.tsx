@@ -41,11 +41,19 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between bg-neutral-100 relative">
-      <div className="fixed right-4 bottom-4 text-5xl flex flex-col gap-3">
+      <div className="  text-5xl">
         {upButton != 'upper' && (
-          <BsFillArrowUpCircleFill className="hover: cursor-pointer text-slate-800" onClick={changeUpPosition} />
+          <BsFillArrowUpCircleFill
+            className={`hover: cursor-pointer text-slate-800 fixed right-4 bottom-20`}
+            onClick={changeUpPosition}
+          />
         )}
-        <BsFillArrowDownCircleFill className="hover: cursor-pointer text-slate-800" onClick={changeDownPosition} />
+        {downButton != 'bottom' && (
+          <BsFillArrowDownCircleFill
+            className="hover: cursor-pointer text-slate-800 fixed right-4 bottom-4"
+            onClick={changeDownPosition}
+          />
+        )}
       </div>
       <section className="grid place-content-center max-sm:gap-6 m-auto my-[100px]">
         <SobreMim />
