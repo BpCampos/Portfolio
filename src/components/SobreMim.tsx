@@ -3,7 +3,7 @@ import React from 'react'
 export default function SobreMim() {
   return (
     <div className="h-[100vh] relative top-[10%] max-sm:h-full">
-      <p className="text-6xl font-bold ml-2 max-sm:text-lg max-sm:ml-0.5">Ola, sou o Bruno Campos</p>
+      <p className="text-6xl font-bold ml-2 max-sm:text-lg max-sm:ml-0.5">Ola, sou Bruno Campos</p>
       <p className="text-[140px] font-bold max-sm:text-5xl -mt-4 max-sm:-mt-0">Desenvolvedor</p>
       <div className="flex gap-4 max-sm:gap-1 max-sm:mt-2 max-sm:block ">
         <p className="text-[140px] font-bold bg-slate-700 text-white px-8 max-sm:text-5xl max-sm:w-fit max-sm:px-3 max-sm:pb-1 h-fit">

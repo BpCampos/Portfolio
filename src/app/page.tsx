@@ -44,13 +44,13 @@ export default function Home() {
       <div className="  text-6xl">
         {upButton != 'upper' && (
           <BsFillArrowUpCircleFill
-            className={`hover: cursor-pointer text-slate-700 fixed right-[930px] bottom-20 max-sm:hidden animate-bounceUp`}
+            className={`hover: cursor-pointer text-slate-700 fixed right-[50%] bottom-20 max-sm:hidden animate-bounceUp`}
             onClick={changeUpPosition}
           />
         )}
         {downButton != 'bottom' && (
           <BsFillArrowDownCircleFill
-            className="hover: cursor-pointer text-slate-700 fixed z-10 right-[930px] bottom-0 max-sm:hidden animate-bounceDown"
+            className="hover: cursor-pointer text-slate-700 fixed z-10 right-[50%] bottom-0 max-sm:hidden animate-bounceDown"
             onClick={changeDownPosition}
           />
         )}
