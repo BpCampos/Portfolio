@@ -51,21 +51,21 @@ export default function Home() {
         <div
           onClick={goToUpperSection}
           className={`border border-black py-2 border-r-0 rounded-ss-xl hover:cursor-pointer ${
-            upperSection == true ? 'bg-slate-500' : ''
+            upperSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Sobre mim
         </div>
         <div
           onClick={goToMiddleSection}
           className={`border border-black py-2 border-r-0 hover:cursor-pointer ${
-            middleSection == true ? 'bg-slate-500' : ''
+            middleSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Tecnologias
         </div>
         <div
           onClick={goToLowerSection}
           className={`border border-black py-2 border-r-0 rounded-es-xl hover:cursor-pointer ${
-            lowerSection == true ? 'bg-slate-500' : ''
+            lowerSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Projetos
         </div>
