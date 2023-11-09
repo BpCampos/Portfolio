@@ -40,17 +40,17 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col justify-between bg-neutral-100 relative">
-      <div className="  text-5xl">
+    <main className="max-w-[1440px] mx-auto flex flex-col justify-between bg-neutral-100 relative">
+      <div className="  text-6xl">
         {upButton != 'upper' && (
           <BsFillArrowUpCircleFill
-            className={`hover: cursor-pointer text-slate-700 fixed right-4 bottom-20 max-sm:hidden`}
+            className={`hover: cursor-pointer text-slate-700 fixed right-[930px] bottom-20 max-sm:hidden animate-bounceUp`}
             onClick={changeUpPosition}
           />
         )}
         {downButton != 'bottom' && (
           <BsFillArrowDownCircleFill
-            className="hover: cursor-pointer text-slate-700 fixed right-4 bottom-4 max-sm:hidden"
+            className="hover: cursor-pointer text-slate-700 fixed z-10 right-[930px] bottom-0 max-sm:hidden animate-bounceDown"
             onClick={changeDownPosition}
           />
         )}
