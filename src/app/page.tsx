@@ -47,7 +47,6 @@ export default function Home() {
 
   return (
     <main className="max-w-[1440px] mx-auto flex flex-col justify-between bg-neutral-100 relative">
-      //Scroll to section
       <div className="text-2xl fixed right-0 top-[45%] w-[150px] bg-slate-600 text-white text-center rounded-ss-xl rounded-es-xl">
         <div
           onClick={goToUpperSection}
