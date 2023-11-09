@@ -2,7 +2,7 @@ export default function Projeto({ projeto }: any) {
   return (
     <div className="flex ml-4 max-sm:flex-col max-sm:ml-0">
       <section className="flex-1 max-sm:w-[90%] max-sm:mx-auto max-sm:shadow-2xl">
-        <h1 className="text-center font-bold text-3xl max-sm:bg-slate-800 max-sm:text-white max-sm:rounded-t-lg bg-slate-800 w-5/6 mx-auto rounded-lg rounded-ee-none rounded-es-none py-1 text-white">
+        <h1 className="text-center font-bold text-3xl max-sm:bg-slate-800 max-sm:text-white max-sm:rounded-t-lg bg-slate-800 w-5/6 mx-auto max-sm:w-full rounded-lg rounded-ee-none rounded-es-none py-1 text-white">
           {projeto.nome}
         </h1>
         <img
