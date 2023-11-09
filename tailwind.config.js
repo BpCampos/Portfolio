@@ -14,18 +14,18 @@ module.exports = {
       },
       keyframes: {
         bounceUp: {
-          '0%, 100%': { transform: 'translateY(15%)' },
+          '0%, 100%': { transform: 'translateY(10%)' },
           '50%': { transform: 'translateY(0)' }
         },
         bounceDown: {
-          '0%, 100%': { transform: 'translateY(-15%)' },
+          '0%, 100%': { transform: 'translateY(-10%)' },
           '50%': { transform: 'translateY(0)' }
         }
       },
 
       animation: {
-        bounceUp: 'bounceUp 1.5s ease-in-out infinite',
-        bounceDown: 'bounceDown 1.5s ease-in-out infinite'
+        bounceUp: 'bounceUp 1.3s ease-in-out infinite',
+        bounceDown: 'bounceDown 1.3s ease-in-out infinite'
       },
 
       boxShadow: {
