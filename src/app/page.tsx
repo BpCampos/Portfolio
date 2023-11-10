@@ -50,21 +50,21 @@ export default function Home() {
       <div className="text-2xl fixed right-0 top-[45%] w-[150px] text-white text-center">
         <div
           onClick={goToUpperSection}
-          className={`border border-black bg-slate-800 py-2 border-r-0 rounded-ss-xl hover:cursor-pointer  hover:text-green-500 duration-200 ${
+          className={`border border-black bg-slate-800 py-2 border-r-0 rounded-ss-xl hover:cursor-pointer max-sm:hidden  hover:text-green-500 duration-200 ${
             upperSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Sobre mim
         </div>
         <div
           onClick={goToMiddleSection}
-          className={`border border-black bg-slate-800 py-2 border-r-0 hover:cursor-pointer  hover:text-green-500 duration-200 ${
+          className={`border border-black bg-slate-800 py-2 border-r-0 hover:cursor-pointer max-sm:hidden  hover:text-green-500 duration-200 ${
             middleSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Tecnologias
         </div>
         <div
           onClick={goToLowerSection}
-          className={`border border-black bg-slate-800 py-2 border-r-0 rounded-es-xl hover:cursor-pointer  hover:text-green-500 duration-200 ${
+          className={`border border-black bg-slate-800 py-2 border-r-0 rounded-es-xl hover:cursor-pointer max-sm:hidden  hover:text-green-500 duration-200 ${
             lowerSection == true ? 'bg-slate-500 text-green-500' : ''
           }`}>
           Projetos
