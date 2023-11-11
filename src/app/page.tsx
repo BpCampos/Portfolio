@@ -50,7 +50,7 @@ export default function Home() {
       <div className="text-2xl select-none fixed right-0 top-[45%] w-[150px] text-white font-bold text-center">
         <div
           onClick={goToUpperSection}
-          className={`border border-black text-white bg-slate-900 py-2 border-r-0 rounded-ss-xl hover:cursor-pointer max-sm:hidde hover:text-blue-400 hover:bg-white duration-200 ${
+          className={`border border-black text-white bg-slate-900 py-2 border-r-0 rounded-ss-xl hover:cursor-pointer max-sm:hidden hover:text-blue-400 hover:bg-white duration-200 ${
             upperSection == true ? 'text-blue-400 bg-gray-100' : ''
           }`}>
           Sobre mim
@@ -70,14 +70,14 @@ export default function Home() {
           Projetos
         </div>
       </div>
-      <section className="grid place-content-center max-sm:gap-6 mt-[100px]">
+      <section className="grid place-content-center max-sm:gap-6 mt-[100px] max-sm:mb-[150px] max-sm:mt-12">
         <SobreMim />
       </section>
       <section ref={scrollToMiddle} className="mb-[130px]">
         <h1 className="text-center text-5xl font-bold max-sm:text-3xl mb-4 max-sm:-mt-0">Tecnologias</h1>
         <Competencias />
       </section>
-      <section ref={scrollToLower} className="mt-[100px]">
+      <section ref={scrollToLower} className="mt-[100px] max-sm:mt-0">
         <h1 className="text-center text-5xl font-bold mb-11 max-sm:text-3xl">Projetos</h1>
         <Projetos />
       </section>
