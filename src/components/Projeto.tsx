@@ -28,13 +28,19 @@ export default function Projeto({ projeto }: any) {
         <div
           className="w-80 mt-5 flex gap-9 max-sm:pl-3 max-sm:w-80
         ">
-          <a href={projeto.github} target="blank">
-            <img className="w-12 max-sm:w-10" src="../../images/github.png" alt="github" />
-          </a>
-          {projeto.website && (
-            <a href={projeto.website} target="blank">
-              <img className="w-12 max-sm:w-10" src="../../images/link-externo.png" alt="Link website" />
+          <div className="flex flex-col justify-center gap-1">
+            <h1 className="text-xl font-bold">Repositório</h1>
+            <a className="self-center" href={projeto.github} target="blank">
+              <img className="w-12 max-sm:w-10" src="../../images/github.png" alt="github" />
             </a>
+          </div>
+          {projeto.website && (
+            <div className="flex flex-col gap-1">
+              <h1 className="text-xl font-bold">Site</h1>
+              <a className="self-center" href={projeto.website} target="blank">
+                <img className="w-12 max-sm:w-10" src="../../images/link-externo.png" alt="Link website" />
+              </a>
+            </div>
           )}
         </div>
       </section>
