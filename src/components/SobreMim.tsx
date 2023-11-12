@@ -6,7 +6,7 @@ export default function SobreMim() {
       <p className="text-6xl font-bold ml-2 max-sm:text-lg max-sm:ml-0.5">Olá, sou Bruno Campos</p>
       <p className="text-[140px] font-bold max-sm:text-5xl -mt-4 max-sm:-mt-0">Desenvolvedor</p>
       <div className="flex gap-4 max-sm:gap-1 max-sm:mt-2 max-sm:block ">
-        <p className="text-[140px] font-bold bg-blue-700 text-white px-8 max-sm:text-5xl max-sm:w-fit max-sm:px-3 max-sm:pb-1 h-fit">
+        <p className="text-[140px] font-bold bg-sky-600 text-white px-8 max-sm:text-5xl max-sm:w-fit max-sm:px-3 max-sm:pb-1 h-fit">
           Full Stack
         </p>
         <div className="grid gap-8 grid-cols-2 justify-items-center items-center w-1/4 max-sm:flex max-sm:w-full max-sm:mt-2 ">

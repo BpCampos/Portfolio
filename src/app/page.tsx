@@ -18,7 +18,7 @@ export default function Home() {
 
   function goToUpperSection() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-    if (upperSection == false) {
+    if (upperSection === false) {
       setUpperSection(true)
       setMiddleSection(false)
       setLowerSection(false)
@@ -44,31 +44,35 @@ export default function Home() {
       setMiddleSection(false)
     }
   }
+  console.log(upperSection, middleSection, lowerSection)
 
   return (
     <main className="max-w-[1440px] mx-auto flex flex-col justify-between bg-white relative">
-      <div className="text-2xl select-none fixed right-0 top-[45%] w-[150px] text-white font-bold text-center">
-        <div
+      <div className="text-2xl select-none fixed right-0 top-[45%] w-[150px] font-bold text-white text-center">
+        <section
           onClick={goToUpperSection}
-          className={`border border-black text-white bg-slate-900 py-2 border-r-0 rounded-ss-xl hover:cursor-pointer max-sm:hidden hover:text-blue-400 hover:bg-white duration-200 ${
-            upperSection == true ? 'bg-gray-200 text-blue-500' : ''
+          className={`border border-black text-white bg-slate-900 py-2 border-r-0 rounded-ss-xl 
+          hover:cursor-pointer max-sm:hidden hover:text-blue-400 hover:bg-slate-600 duration-200 ${
+            upperSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
           }`}>
           Início
-        </div>
-        <div
+        </section>
+        <section
           onClick={goToMiddleSection}
-          className={`border border-black bg-slate-900 py-2 border-r-0 hover:cursor-pointer max-sm:hidden  hover:text-blue-400 hover:bg-white duration-200 ${
-            middleSection == true ? 'text-blue-500 bg-gray-200' : ''
-          }`}>
+          className={`border border-black bg-slate-900 py-2 border-r-0 hover:cursor-pointer max-sm:hidden
+           hover:text-blue-400 hover:bg-slate-600 duration-200 ${
+             middleSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
+           }`}>
           Tecnologias
-        </div>
-        <div
+        </section>
+        <section
           onClick={goToLowerSection}
-          className={`border border-black bg-slate-900 py-2 border-r-0 rounded-es-xl hover:cursor-pointer max-sm:hidden  hover:text-blue-400 hover:bg-white duration-200 ${
-            lowerSection == true ? 'text-blue-500 bg-gray-200' : ''
-          }`}>
+          className={`border border-black bg-slate-900 py-2 border-r-0 rounded-es-xl hover:cursor-pointer max-sm:hidden
+           hover:text-blue-400 hover:bg-slate-600 duration-200 ${
+             lowerSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
+           }`}>
           Projetos
-        </div>
+        </section>
       </div>
       <section className="grid place-content-center max-sm:gap-6 mt-[100px] max-sm:mb-[150px] max-sm:mt-12">
         <SobreMim />
