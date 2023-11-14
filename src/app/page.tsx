@@ -48,12 +48,12 @@ export default function Home() {
 
   return (
     <main className="max-w-[1440px] mx-auto flex flex-col justify-between bg-white relative">
-      <div className="text-2xl select-none fixed right-0 top-[45%] w-[150px] font-bold text-white text-center">
+      <div className="text-2xl select-none fixed right-0 top-[45%] w-[150px] font-bold  text-center">
         <section
           onClick={goToUpperSection}
-          className={`border border-black text-white bg-slate-900 py-2 border-r-0 rounded-ss-xl 
+          className={`border border-black bg-slate-900 py-2 border-r-0 rounded-ss-xl 
           hover:cursor-pointer max-sm:hidden hover:text-blue-400 hover:bg-slate-600 duration-200 ${
-            upperSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
+            upperSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : 'text-white'
           }`}>
           Início
         </section>
@@ -61,7 +61,7 @@ export default function Home() {
           onClick={goToMiddleSection}
           className={`border border-black bg-slate-900 py-2 border-r-0 hover:cursor-pointer max-sm:hidden
            hover:text-blue-400 hover:bg-slate-600 duration-200 ${
-             middleSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
+             middleSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : 'text-white'
            }`}>
           Tecnologias
         </section>
@@ -69,7 +69,7 @@ export default function Home() {
           onClick={goToLowerSection}
           className={`border border-black bg-slate-900 py-2 border-r-0 rounded-es-xl hover:cursor-pointer max-sm:hidden
            hover:text-blue-400 hover:bg-slate-600 duration-200 ${
-             lowerSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : ''
+             lowerSection == true ? 'border-blue-400 bg-slate-600 text-blue-400' : 'text-white'
            }`}>
           Projetos
         </section>
